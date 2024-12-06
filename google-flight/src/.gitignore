@@ -1,0 +1,4 @@
+1. https://github.com/Figensoftware/Google-Flight-Clone.git
+2. npm create vite@latest google-flight -- --template react
+3. npm install @reduxjs/toolkit react-redux
+4. npm install @mui/icons-material @mui/material @emotion/styled @emotion/react

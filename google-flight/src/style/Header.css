@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border: none;
+    border-bottom: 1px solid #202124;
+}
+
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 950px) {
+    .navbar {
+        display: none;
+    }
+}
