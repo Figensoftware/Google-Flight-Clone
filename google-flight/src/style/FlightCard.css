@@ -1,0 +1,46 @@
+.card {
+    width: 100%;
+    margin: 10px;
+    box-shadow: 1px 1px 4px 1px rgb(181, 181, 181);
+    padding: 35px 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.airport-name {
+    font-size: 16px;
+}
+
+.ticket-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ticket-time {
+    font-size: 16px;
+}
+
+
+/* media */
+
+@media screen and (max-width: 450px) {
+
+    .ticket-time,
+    .card-title,
+    .airport-name,
+    .ticket-price {
+        padding: 5px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .card {
+        margin: 10px 0;
+        padding: 30px 8px;
+    }
+}

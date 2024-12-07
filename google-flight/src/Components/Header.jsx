@@ -10,7 +10,6 @@ import Button from '@mui/material/Button';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import AppsIcon from '@mui/icons-material/Apps';
 import Avatar from '@mui/material/Avatar';
-import { deepPurple } from '@mui/material/colors';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -38,14 +37,16 @@ function Header() {
     return (
         <Grid  >
             <div className='header'>
-                <Grid size={{ xs: 11, md: 11, lg: 11 }}>
+
+                <Grid size={{ xs: 11, md: 11, lg: 11 }} >
+
                     <div className="header-left">
                         <MenuIcon sx={{ margin: "15px", marginLeft: "20px", color: "gray", cursor: "pointer" }} onClick={() => dispatch(setDrawer())} />
                         <GoogleLogo />
                         <div className='navbar'>
                             <Button sx={{ color: "#505053", borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "8px 10px", marginRight: "10px", fontFamily: "arial" }} size='small' variant="outlined" color='primary' startIcon={<LuggageIcon color='primary' />} >Travel</Button>
                             <Button sx={{ color: "#505053", borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "8px 10px", marginRight: "10px", fontFamily: "arial" }} size='small' variant="outlined" color='primary' startIcon={<TravelExploreIcon color='primary' />} >Explore</Button>
-                            <Button sx={{ borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "8px 10px", marginRight: "10px", fontFamily: "arial", color: "#1962D2", backgroundColor: "aliceblue" }} size='small' variant="contained" startIcon={<AirplanemodeActiveIcon color='primary' />} >Flights</Button>
+                            <Button sx={{ borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "8px 10px", marginRight: "10px", fontFamily: "arial", color: "#1962D2", backgroundColor: "#b3def2" }} size='small' variant="contained" startIcon={<AirplanemodeActiveIcon color='primary' />} >Flights</Button>
                             <Button sx={{ color: "#505053", borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "8px 10px", marginRight: "10px", fontFamily: "arial" }} size='small' variant="outlined" color='primary' startIcon={<HotelIcon color='primary' />} >Hotels</Button>
                             <Button sx={{ color: "#505053", borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "8px 10px", marginRight: "10px", fontFamily: "arial" }} size='small' variant="outlined" color='primary' startIcon={<HouseIcon color='primary' />} >Vacation Rentals</Button>
 
@@ -56,6 +57,7 @@ function Header() {
                 </Grid>
 
                 <Grid size={{ xs: 1, md: 1, lg: 1 }}>
+
                     <div className="header-right">
                         {
                             !theme ? <Tooltip title="Change Appearance" sx={{ marginRight: "15px" }} onClick={changeTheme} >
@@ -77,9 +79,9 @@ function Header() {
                             </IconButton>
                         </Tooltip>
 
-                        <Tooltip title="Google Account" sx={{ marginRight: "30px" }}>
+                        <Tooltip title="Google Account" sx={{ marginRight: { xs: "50px", md: "30px" } }}>
                             <IconButton>
-                                <Avatar sx={{ bgcolor: deepPurple[500] }}>DM</Avatar>
+                                <Avatar sx={{ bgcolor: "#f2bf66", color: "#e05356" }}>FD</Avatar>
                             </IconButton>
                         </Tooltip>
                     </div>

@@ -2,3 +2,5 @@
 2. npm create vite@latest google-flight -- --template react
 3. npm install @reduxjs/toolkit react-redux
 4. npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+5.npm i axios
+6.npm install react-router-dom?

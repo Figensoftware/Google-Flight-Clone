@@ -32,7 +32,7 @@ function DrawerApp() {
 
                     <Button sx={{ color: "#505053", borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "10px", fontFamily: "arial", border: "none", paddingRight: "40px" }} size='small' variant="outlined" color='inherit' startIcon={<TravelExploreIcon color='inherit' />} >Explore</Button>
 
-                    <Button sx={{ borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "10px", fontFamily: "arial", border: "none", paddingRight: "40px", color: "#1962D2", backgroundColor: "aliceblue" }} size='small' variant="contained" startIcon={<AirplanemodeActiveIcon color='inherit' />} >Flights</Button>
+                    <Button sx={{ borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "10px", fontFamily: "arial", border: "none", paddingRight: "40px", color: "#1962D2", backgroundColor: "#b3def2" }} size='small' variant="contained" startIcon={<AirplanemodeActiveIcon color='inherit' />} >Flights</Button>
 
                     <Button sx={{ color: "#505053", borderRadius: "20px", textTransform: "none", fontWeight: "bold", padding: "10px", fontFamily: "arial", border: "none", paddingRight: "40px" }} size='small' variant="outlined" color='inherit' startIcon={<HotelIcon color='inherit' />} >Hotels</Button>
 
